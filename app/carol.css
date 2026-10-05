@@ -77,7 +77,10 @@
 @media (max-width: 700px) {
   /* Continue the photo's background tone behind the transparent nav, without moving the portrait above it. */
   .campaign-portrait { top: 86px; mask-image: linear-gradient(180deg, transparent 0, #000000a6 12px, #000 28px); }
-  .campaign { background: linear-gradient(180deg, #625e57 0%, #625e57 20%, #181412 62%); }
+  .campaign { height: max(100svh, 780px, 150vw); background: linear-gradient(180deg, #625e57 0%, #625e57 20%, #181412 62%); }
+  /* Keep the complete crown below both the nav and the background blend, including wide mobile viewports. */
+  .campaign-silhouette { top: 36px; mask-image: linear-gradient(180deg, transparent 0, #000 6px); }
+  .campaign-original { object-position: 50% 0%; transform: none; filter: none; }
   .campaign h1 { font-size: clamp(52px, 12.8vw, 86px); }
   .campaign-kicker { font-size: 8px; gap: 8px; letter-spacing: .1em; }
   .campaign-kicker::before { width: 16px; }

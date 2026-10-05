@@ -75,9 +75,9 @@
   .essence-editorial-copy { width: 45%; }
 }
 @media (max-width: 700px) {
-  /* The photograph begins below the transparent navigation on mobile too. */
-  .campaign-portrait { top: 86px; }
-  .campaign { background: #181412; }
+  /* Continue the photo's background tone behind the transparent nav, without moving the portrait above it. */
+  .campaign-portrait { top: 86px; mask-image: linear-gradient(180deg, transparent 0, #000000a6 12px, #000 28px); }
+  .campaign { background: linear-gradient(180deg, #625e57 0%, #625e57 20%, #181412 62%); }
   .campaign h1 { font-size: clamp(52px, 12.8vw, 86px); }
   .campaign-kicker { font-size: 8px; gap: 8px; letter-spacing: .1em; }
   .campaign-kicker::before { width: 16px; }

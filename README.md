@@ -30,7 +30,7 @@ Retratos e oito registros de resultados vieram dos anexos enviados pelo solicita
 
 O hero desktop usa transição lateral gradual, com a fotografia abaixo do nav transparente e cores naturais no rosto. Os ajustes de transição ficam no breakpoint desktop. Nas demais seções desktop, os retratos são exibidos por inteiro. A versão mobile mantém a composição responsiva do template.
 
-O favicon próprio está em **app/icon.svg** e **app/favicon.ico**, com monograma CD em dourado sobre grafite. **Não foi criada imagem OG**, nem há arquivo ou metadado de imagem OG no projeto.
+O favicon próprio está em **app/icon.svg** e **app/favicon.ico**, com monograma CD em dourado sobre grafite. A imagem de compartilhamento enviada pelo solicitante está em **public/images/og-carol-domingos.jpg**, configurada para Open Graph e Twitter. Foi otimizada de 2,24 MB para 104 kB, em 1200 × 675 px, preservando a composição completa. O endereço absoluto usa o domínio definido em **data/site.ts** ou o domínio de produção fornecido automaticamente pela Vercel.
 
 ## Validação realizada
 

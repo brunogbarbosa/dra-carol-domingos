@@ -1,0 +1,85 @@
+/* Premium Vendas V4 — graphite, warm ivory and restrained gold. */
+.essence-editorial { background: #f4f0eb; }
+.essence-values { background: #e9dfd5; }
+.essence-value { background: #faf8f3d9; border-color: #ffffffa8; }
+.essence-value-icon { background: #dbcab9; color: #292321; }
+.essence-editorial-description, .essence-value p { color: #6d635f; }
+.gallery-chapter, .closing-chapter, .footer, .result-dialog { background: #211d1b; }
+.gallery-photo, .comparison { background: #322b27; }
+.gallery-heading p, .footer-main > div { color: #d9cec6; }
+.ritual-chapter { background: #f4f0eb; }
+.social-chapter { background: #e8dfd5; }
+.closing-chapter { background: radial-gradient(circle at 80% 20%, #463a33, #211d1b 58%); }
+.menu-dialog { background: #f4f0eb; }
+.viewer-note { color: #d8bda7; }
+@media (max-width: 700px) {
+  .gallery-heading p { max-width: 30rem; }
+  .gallery-photo { aspect-ratio: .88; }
+}
+
+
+/* Carol Domingos: warm ivory, graphite and the gold of her portraits. */
+.essence-editorial, .ritual-chapter, .menu-dialog { background: var(--paper); }
+.essence-values { background: #e8dfd2; }
+.essence-value { background: #faf8f3df; }
+.essence-value-icon { background: #dfceb2; }
+.gallery-chapter, .footer, .result-dialog { background: var(--dark); }
+.gallery-photo, .comparison { background: #28241f; }
+.closing-chapter { background: radial-gradient(circle at 80% 20%, #453d30, var(--dark) 58%); }
+.social-chapter { background: #e9e0d4; }
+.ritual-list p { color: var(--muted); }
+.closing-bottom p, .closing-bottom > span, .footer-main > div { color: #dfd5c8; }
+.header:not(.scrolled) { background: transparent; }
+.header.scrolled { position: fixed; inset: 0 0 auto; width: 100%; margin: 0; }
+.header:not(.scrolled) .mobile-menu { background: transparent; backdrop-filter: none; }
+.campaign-portrait { overflow: hidden; }
+.comparison { max-width: 100%; }
+.comparison.vertical { width: auto; height: 100%; max-width: 100%; }
+
+/* Desktop blend is kept separate from the template's mobile hero. */
+@media (min-width: 701px) {
+  .header:not(.scrolled) { height: 104px; padding-inline: 7%; }
+  .header:not(.scrolled) .desktop-nav { display: flex; }
+  .header:not(.scrolled) .mobile-menu { display: none; }
+  .header.scrolled .desktop-nav { display: flex; }
+  .header.scrolled .mobile-menu { display: none; }
+  .campaign { background: var(--dark); }
+  .campaign-portrait {
+    inset: 104px 0 0 39%;
+    mask-image: linear-gradient(90deg, transparent 0%, #00000008 5%, #00000024 11%, #00000060 20%, #000000b8 30%, #000000ed 42%, #000 53%), linear-gradient(180deg, transparent 0, #00000026 12px, #00000080 30px, #000000e6 58px, #000 82px);
+    mask-composite: intersect;
+  }
+  .campaign-original { object-position: 50% 0%; filter: none; transform: none; }
+  .campaign::before {
+    background: linear-gradient(90deg, #1c1b18 0%, #1c1b18 29%, #1c1b18e6 37%, #1c1b1850 49%, transparent 61%), linear-gradient(0deg, #1c1b188c, transparent 24%);
+  }
+  .campaign::after { background: none; }
+  .campaign-inner { padding-top: 130px; }
+  .campaign-organic { border-color: #d5bd9530; }
+  .campaign-organic-two { border-color: #d5bd951a; }
+  .campaign-seal { bottom: 118px; width: 104px; height: 104px; }
+  .campaign-editorial { top: auto; bottom: 265px; }
+  .essence-stage { height: clamp(840px, 55vw, 920px); min-height: 0; }
+  .essence-smile { width: min(43%, 620px); top: 40px; right: 6.5%; aspect-ratio: 1122 / 1402; border-radius: 24px; }
+  .essence-smile img { object-fit: contain; object-position: center; }
+  .essence-editorial-copy { margin-left: 7%; width: 44%; padding-top: 55px; }
+  .essence-editorial-top { margin-left: 7%; }
+  .essence-margin-note { left: 7%; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .campaign-portrait { left: 34%; }
+  .campaign-kicker { font-size: 9px; letter-spacing: .15em; }
+  .campaign-copy { width: 65%; }
+  .essence-stage { height: 780px; }
+  .essence-smile { top: 120px; width: 44%; right: 4%; }
+  .essence-editorial-copy { width: 45%; }
+}
+@media (max-width: 700px) {
+  /* The photograph begins below the transparent navigation on mobile too. */
+  .campaign-portrait { top: 86px; }
+  .campaign { background: #181412; }
+  .campaign h1 { font-size: clamp(52px, 12.8vw, 86px); }
+  .campaign-kicker { font-size: 8px; gap: 8px; letter-spacing: .1em; }
+  .campaign-kicker::before { width: 16px; }
+  .gallery-item figcaption > span:last-child { font-size: 9px; }
+}

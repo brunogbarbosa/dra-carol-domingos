@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Carol Domingos — CD</title>
+  <rect width="64" height="64" rx="16" fill="#1c1b18"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="12" fill="none" stroke="#d5bd95" stroke-opacity=".55"/>
+  <path d="M28.5 22.5c-2.2-3-5-4.3-8.5-4.3-7 0-11.5 5.4-11.5 13.8S13 46 20 46c3.7 0 6.4-1.5 8.8-4.4" fill="none" stroke="#d5bd95" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M32.5 19h7c9 0 14 4.8 14 13s-5 13-14 13h-7M35 19v26" fill="none" stroke="#d5bd95" stroke-width="2.7" stroke-linejoin="round"/>
+</svg>
